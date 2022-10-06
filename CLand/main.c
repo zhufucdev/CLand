@@ -8,7 +8,12 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    int a, n, i, num_produced, sum;
+    scanf("%1d%d", &a, &n);
+    for (num_produced = a, sum = 0, i = 0; i < n; i++) {
+        sum += num_produced;
+        num_produced = num_produced * 10 + a;
+    }
+    printf("%d\n", sum);
     return 0;
 }
