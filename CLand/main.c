@@ -7,13 +7,19 @@
 
 #include <stdio.h>
 
+int iterate(int, int, int);
+
 int main(int argc, const char * argv[]) {
-    int a, n, i, num_produced, sum;
+    int a, n;
     scanf("%1d%d", &a, &n);
-    for (num_produced = a, sum = 0, i = 0; i < n; i++) {
-        sum += num_produced;
-        num_produced = num_produced * 10 + a;
-    }
-    printf("%d\n", sum);
+    printf("%d\n", iterate(1, a, n));
     return 0;
+}
+
+int iterate(int gen, int a, int n) {
+    if (gen > n) {
+        return 0;
+    } else {
+        return iterate(gen + 1, a * 10 + a, n) + a;
+    }
 }
