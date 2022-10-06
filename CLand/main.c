@@ -17,9 +17,5 @@ int main(int argc, const char * argv[]) {
 }
 
 int iterate(int gen, int a, int n) {
-    if (gen > n) {
-        return 0;
-    } else {
-        return iterate(gen + 1, a * 10 + a, n) + a;
-    }
+    return (gen < n ? iterate(gen + 1, a * 10 + a, n) : 0) + a;
 }
