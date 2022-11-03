@@ -5,7 +5,15 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    int a[10];
+    for (int i = 0; i < 10; i++) {
+        scanf("%d", &a[i]);
+    }
+    int *p;
+    p = a; // p = &a[0];
+    for (int i = 0; i < 10; i++) {
+        printf("%d ", p + i);
+    }
+    printf("\n");
     return 0;
 }

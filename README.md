@@ -1,29 +1,17 @@
-# CLand
+# Ptr
 
-Collection of my example code produced while learning
-the C programming language.
+Playing with pointer.
 
-# How
+Input 10 integers to see their addresses.
 
-These code are presented as small fragments, which
-correspond to different branches.
+# Example
 
-Hope to see them all nicely documented.
-
-# License
-
+Input:
 ```
-Copyright 2022 zhufucdev
+1 2 3 4 5 1 2 3 4 5
+```
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
+Output:
+```
+1876947680 1876947684 1876947688 1876947692 1876947696 1876947700 1876947704 1876947708 1876947712 1876947716 
 ```
